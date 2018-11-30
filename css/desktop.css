@@ -1,0 +1,237 @@
+
+
+/* 
+
+
+mobile
+@media handheld, only screen and (max-width: 600px){
+*/
+
+@media handheld, only screen and (max-width: 99999px) and (min-width: 601px){
+
+
+
+
+body{
+    margin: auto;
+    padding: 0px;
+    width: 100%;
+    font-family: PoiretOne-Regular;
+    position: relative;
+}
+
+
+@font-face {
+    font-family: PoiretOne-Regular;
+    src: url(../font/PoiretOne-Regular.ttf);
+}
+
+
+
+
+
+
+::placeholder{
+    color: #cdcdcd;
+    font-size: 17px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Helvetica Neue,sans-serif;
+    font-weight: 400;
+    line-height: 1.3125;
+}
+
+.ap{ 
+        text-align: center;
+-webkit-animation-name: ap;        
+    -webkit-animation-duration: 1.5s;     
+    animation-name: ap;             
+    animation-duration: 1.5s;         
+    transition: 1.5s;
+
+   margin: auto;
+   max-width: 400px;
+   height: 259px;
+   background-image: linear-gradient(to right, #f09230 , #774a90);
+   margin-top: 100px;
+
+        
+}   
+ 
+.ap img{
+    width: 400px;
+}
+           
+@-webkit-keyframes ap {     
+    from { 
+        width:0px;
+       
+        
+        background-color: #0071ff;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        background-image: linear-gradient(to right, #f09230 , #774a90);
+        
+        
+        }     
+    to {
+    width: 400px; 
+      
+
+        background-image: linear-gradient(to right, #f09230 , #774a90);
+        background-color: #b500ff;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: none;
+        
+        
+        }             
+}       
+    
+/* Standard syntax */       
+@keyframes ap {     
+    from { 
+        width:0px;
+        
+        background-image: linear-gradient(to right, #f09230 , #774a90);
+        background-color: #0071ff;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        
+        
+        }     
+    to {
+        width: 400px; 
+        
+        background-image: linear-gradient(to right, #f09230 , #774a90);
+        background-color: #b500ff;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: none;
+        
+        
+        }             
+}   
+
+
+
+
+div#grad{
+width: 400px;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 1s;
+    animation-name: example;
+    animation-duration: 1s;
+    background: #0071ff;
+    margin: auto;
+    height: 247px;
+    
+}
+
+#grad img{
+	width: 100%;
+}
+
+
+.auxbloco{
+    float: left;
+    width: 100%;
+    position: relative;
+
+}
+
+.fundobloco1 {
+    float: left;
+    position: relative;
+    width: 100%;
+    background-image: url(../img/fundobloco.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.texto h2{
+    font-size: 50px;
+}
+
+.texto p{
+    font-size: 30px;
+}
+
+
+.auxblocos{
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-top: 250px;
+}
+
+
+
+    .corpoblocos {
+       
+        margin: auto;
+
+    }
+    .bloco{
+        float: left;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    padding: 50px 0px;
+    }
+
+
+    .texto,.vetorconteudo{
+        position: relative;
+        float: left;
+        width: 49%
+    }
+
+ .vetorconteudo {
+    position: relative;
+    float: left;
+    width: 44%;
+    margin-left: 5%;
+    text-align: center;
+    padding-top: 85px;
+}
+
+.texto{
+    position: relative;
+    float: left;
+    width: 44%;
+    margin-left: 5%;
+}
+
+
+
+.faixacima{
+    width: 100%;
+    position: relative;
+    float: left;
+    height: 30px;
+    background-image: linear-gradient(to top, #fff , transparent);
+
+}
+.faixabaixa{
+    width: 100%;
+    position: relative;
+    float: left;
+    height: 30px;
+    background-image: linear-gradient(to top, transparent , #fff);
+}
+
+
+
+
+#message {
+    float: left;
+    width: 500px;
+    height: 100px;
+    background: #d84848;
+}
+
+
+}
