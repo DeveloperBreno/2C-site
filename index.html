@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
+   <head>
+      <link rel="stylesheet" type="text/css" href="css/desktop.css">
+      <link rel="stylesheet" type="text/css" href="css/mobile.css">
+      <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+      <link href="cima.png" rel="shortcut icon" type="image/x-icon">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
 
-
-<link rel="stylesheet" type="text/css" href="css/desktop.css">
-
-
-  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
-  <link href="cima.png" rel="shortcut icon" type="image/x-icon">
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-
-
-</head>
-<body>
-
-
-
-<div class="ap">
-	<img src="animacao/animaae.png">
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">HOME</a>
+    <a href="#">PRODUTOS</a>
+    <a href="#">IDENTIDADE</a>
+    <a href="#">ARTIGOS</a>
+    <a href="#">CONTATO</a>
+  </div>
 </div>
 
-<script type="text/javascript">
-function typeWritter(texto,idElemento,tempo){
-    var char = texto.split('').reverse();
-    var typer = setInterval(function () {
-        if (!char.length) return clearInterval(typer);
-        var next = char.pop();
-        document.getElementById(idElemento).innerHTML += next;
-    }, tempo);
+
+<span id="spnamenu" onclick="openNav()">☰</span>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "300px";
+    document.getElementById("myNav").style.height = "100%";
 }
-typeWritter('Professional by carrer','log',50);
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").style.height = "100%";
+}
 </script>
-<div id="log" style="
-    text-align: center;
-    padding-top: 20px;
-    font-size: 37px;
-    color: #403e3e;
-"></div>
 
 
 
@@ -51,139 +42,230 @@ typeWritter('Professional by carrer','log',50);
 
 
 
-<!-- blocos -->
-<div class="corpoblocos">
-	<div class="auxblocos">
-		
+
+
+
+      <div class="ap">
+         <img src="animacao/animaae.png">
+      </div>
+      <script type="text/javascript">
+         function typeWritter(texto,idElemento,tempo){
+             var char = texto.split('').reverse();
+             var typer = setInterval(function () {
+                 if (!char.length) return clearInterval(typer);
+                 var next = char.pop();
+                 document.getElementById(idElemento).innerHTML += next;
+             }, tempo);
+         }
+         typeWritter('Professional by carrer','log',50);
+      </script>
+      <div id="log" style="
+         text-align: center;
+         padding-top: 20px;
+         
+         color: #403e3e;
+         height: 200px;
+         "></div>
+      <!-- blocos -->
+      <div class="corpoblocos">
+         <div class="auxblocos">
+            <div class="bloco">
+               <div class="auxbloco">
+                  <div class="fundobloco1">
+                     <div class="texto">
+                        <h2>Life Coaching</h2>
+                        <p>Desenvolvimento e potencialização de seus soft skills para se destacar no ambiente corporativo e manutenção do equilíbrio interior.<br>
+                        </p>
+                       
+                     </div>
+                     <div class="vetorconteudo">
+                        <img src="img/equili.svg">
+                     </div>
+
+                      <div class="saiba">
+                           <a href="link_para_conteudo" style="
+                              ">SAIBA +</a>
+                           <br>
+                        </div>
+                  </div>
+               </div>
+            </div>
+            <div class="bloco">
+               <div class="auxbloco">
+                  <div class="fundobloco1">
+                     <div class="texto">
+                        <h2>Coaching Empresarial</h2>
+                        <p>gSoluções para sua empresa de acordo com as principais demanadas para o alcance de alta performance e potencializar os resultados de sua cultura, mantendo a gestão organizacional em equilíbrio com todas as áreas do negócio, comunicação eficaz entre os clientes internos e externos e alavanca do sucesso para o empresário e empresa.
+                        </p>
+                        
+                     </div>
+                     <div class="vetorconteudo">
+                        <img src="img/teste.svg">
+                     </div>
+                     <div class="saiba">
+                           <a href="link_para_conteudo" style="
+                              ">SAIBA +</a>
+                           <br>
+                        </div>
+                  </div>
+               </div>
+            </div>
+            <div class="bloco">
+               <div class="auxbloco">
+                  <div class="fundobloco1">
+                     <div class="texto">
+                        <h2>Coaching for Doctors</h2>
+                        <p>Planejamento de carreira para médicos recém-formados, estratégias para adaptação na rotina de trabalho (teste de resiliência), metodologia  	<br>
+                           de autoconhecimento para lidar com inteligência emocional na tomada de decisão, competências para liderar equipe.<br><br>
+                        </p>
+                       
+                     </div>
+                     <div class="vetorconteudo">
+                        <img src="img/med.svg" style="
+                           
+                           ">
+                     </div>
+                      <div class="saiba">
+                           <a href="link_para_conteudo" style="
+                              ">SAIBA +</a>
+                           <br>
+                        </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+ 
+
+
+
+<div class="rodacor">
+
+      	<div class="rodape">
+      		<div class="rodaaux">
 
 
 
 
-		<div class="bloco">
-			<div class="auxbloco">
-				<div class="fundobloco1">
-					<div class="texto">
-						<h2>Life Coaching</h2>
-						<p>gDesenvolvimento e potencialização de seus soft skills para se destacar no ambiente corporativo e manutenção do equilíbrio interior.<br>
-					</p>
-						<a href="link_para_conteudo" style="
-						    padding: 11px 84px;
-						    border-radius: 40px;
-						    text-align: center;
-						    border: 1px solid #b500ff;
-						    color: #b500ff;
-						    text-decoration: none;
-						    font-size: 27px;
-						">SAIBA +</a>
-					</div>
+      		<div class="org">
+      			<h3>IDENTIDADE ORGANIZACIONAL</h3>
+      			<div class="paipart">
 
 
-					<div class="vetorconteudo">
-						<img src="img/equili.svg">
-					</div>	
+      				<div class="blocopart">
+      					<div class="imgbloco" id="mi"></div>
+      					<h3>Missão</h3>
+      					<p>Promover o desenvolvimento progressivo e de alta performance de  profissionais  de forma sistêmica, com
+foco nas principais tendências de  mercado 
+a partir das profissões  para aplicabilidade prática, visão ampla de  negócio  e investimento constante no
+intelectual de forma adequada de acordo com as  exigências de mercado . </p>
 
-				</div>
-			</div>	
+      				</div>
+
+      				<div class="blocopart">
+      					<div class="imgbloco" id="vi"></div>
+      					<h3>Visão</h3>
+      					<p>Manter o comprometimento com a determinação no alcance das metas,
+respeito pelas diferenças, atitude positiva em processos de mudanças de ordem
+pessoal e profissional, competência funcional na busca de informações
+contundentes e relevantes, comunicação eficaz e equilibrada nas relações
+interpessoais com total ética e transparência frente aos negócios/clientes.</p>
+
+      				</div>
+
+
+
+      				<div class="blocopart">
+      					<div class="imgbloco" id="va"></div>
+      					<h3>Valores</h3>
+      					<p>Construir um ciclo progressivo
+de conquistas positivas e de alto impacto corporativo, agregar conhecimentos
+multidisciplinares para segmentos diversos, com base na geração de novos
+negócios e parcerias construtivas.</p>
+
+      				</div>
+
+
+
+      			</div>
+      		</div>
+
+
+
+
+
+
+
+
+
+<div class="artigos">
+	<h3>Artigos Interessantes</h3>
+	<div class="artpai">
+		<div class="blocosartig">
+			<img src="img/carol-sweck.svg">
+			<h4>Carol Dweck defende em livro a importância de valorizar o esforço </h4>
+			<p>Pioneira no estudo sobre o desenvolvimento pessoal fala sobre como colocar a mentalidade a nosso favor</p>
+			<a id="seta" href="https://exame.abril.com.br/revista-exame/carol-duek-defende-em-livro-a-importancia-de-valorizar-o-esforco/" target="_blank" style="
+    font-size: 64px;
+    text-decoration: none;
+">⇨</a>
 		</div>
+		<div class="blocosartig">
+			<img src="img/daniel.svg">
+			<h4>Inteligência Emocional de Daniel Golemann </h4>
+			<p>As duas mentes, mente racional e a mente emocional, geralmente operam em estreita harmonia e equilíbrio</p>
+			<a id="seta" href="https://www.academiadoaprendiz.com.br/nossas-duas-mentes/" target="_blank" style="
+    font-size: 64px;
+    text-decoration: none;
+">⇨</a>
 
-
-
-
-
-
-		<div class="bloco">
-			<div class="auxbloco">
-				<div class="fundobloco1">
-					<div class="texto">
-						<h2>Coaching Empresarial</h2>
-						<p>gSoluções para sua empresa de acordo com as principais demanadas para o alcance de alta performance e potencializar os resultados de sua cultura, mantendo a gestão organizacional em equilíbrio com todas as áreas do negócio, comunicação eficaz entre os clientes internos e externos e alavanca do sucesso para o empresário e empresa.
-					</p>
-						<a href="link_para_conteudo" style="
-						    padding: 11px 84px;
-						    border-radius: 40px;
-						    text-align: center;
-						    border: 1px solid #b500ff;
-						    color: #b500ff;
-						    text-decoration: none;
-						    font-size: 27px;
-						">SAIBA +</a>
-					</div>
-
-
-					<div class="vetorconteudo">
-						<img src="img/teste.svg" style="width: 459px;">
-					</div>	
-
-				</div>
-			</div>	
 		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<div class="bloco">
-			<div class="auxbloco">
-				<div class="fundobloco1">
-					<div class="texto">
-						<h2>Coaching for Doctors</h2>
-						<p>Planejamento de carreira para médicos recém-formados, estratégias para adaptação na rotina de trabalho (teste de resiliência), metodologia  	<br>
-							de autoconhecimento para lidar com inteligência emocional na tomada de decisão, competências para liderar equipe.<br><br>
-					</p>
-						<a href="link_para_conteudo" style="
-						    padding: 11px 84px;
-						    border-radius: 40px;
-						    text-align: center;
-						    border: 1px solid #b500ff;
-						    color: #b500ff;
-						    text-decoration: none;
-						    font-size: 27px;
-						">SAIBA +</a>
-					</div>
-
-
-					<div class="vetorconteudo">
-						<img src="img/med.svg" style="
-   
-    width: 400px;
-">
-					</div>	
-
-				</div>
-			</div>	
-		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	</div>
 </div>
 
-<style type="text/css">
 
-</style>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1829.674086349028!2d-46.69610226389311!3d-23.48396553078634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef9b0a811ec3f%3A0x372ddf891d5c9a65!2sAv.+Min.+Petr%C3%B4nio+Portela%2C+1901+-+Freguesia+do+%C3%93%2C+S%C3%A3o+Paulo+-+SP%2C+02802-120%2C+Brasil!5e0!3m2!1spt-BR!2sus!4v1543644133294" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<br><br><br><br><br><br><br>
 
 
 
-</body>
+
+
+      			<div class="partdalogo">
+      				<a href="">
+      					<img src="img/logo.svg">
+      				</a>
+      			</div>
+
+
+      			<div class="textoobre">
+      				<h3>Sobre</h3>
+      				<p>a empresa ~~~~~~ ~~~ ~~~~~~ ~~~~~~ ~~~~~~ ~~ ~~~~~~~~ ~~~~~~~~~~~~ ~~~~~~</p>
+      			</div>
+
+
+      			<div class="redes">
+
+      				<a href=""><div class="rede" id="in"></div></a>
+      				<a href=""><div class="rede" id="fb"></div></a>
+      				<a href=""><div class="rede" id="tw"></div></a>
+      				
+      			</div>
+      			<div class="c"><p>Copyright  © Brand 2018</p></div>
+      		</div>
+      	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+   </body>
 </html>

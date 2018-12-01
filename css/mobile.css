@@ -1,12 +1,6 @@
-/* 
 
 
-mobile
 @media handheld, only screen and (max-width: 600px){
-*/
-
-@media handheld,
-only screen and (max-width: 99999px) and (min-width: 601px) {
     body {
         margin: auto;
         padding: 0px;
@@ -16,9 +10,32 @@ only screen and (max-width: 99999px) and (min-width: 601px) {
         width: 90%;
     }
 
-#spnamenu{
-    font-size:30px;cursor:pointer;color: #765c8b;float: right;margin: 0px 10px 0px 0px;position: fixed;right: 30px;top: 30px;
+
+#log{
+
+    font-size: 23px;
+
 }
+
+
+
+
+#spnamenu{
+font-size: 30px;
+    cursor: pointer;
+    color: #ad90aab0;
+    float: right;
+    margin: 0px 10px 0px 0px;
+    position: fixed;
+    right: -13px;
+    top: 0px;
+    z-index: 9999;
+    border-radius: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+
 
 
 .overlay {
@@ -58,7 +75,7 @@ only screen and (max-width: 99999px) and (min-width: 601px) {
 
 .overlay .closebtn {
 position: absolute;
-    top: -17px;
+    top: 4px;
     right: 5px;
     font-size: 60px;
 }
@@ -76,13 +93,6 @@ position: absolute;
 }
 
 
-
-
-#log{
-
-    font-size: 37px;
-
-}
 
 
 
@@ -106,13 +116,14 @@ position: absolute;
         animation-duration: 1.5s;
         transition: 1.5s;
         margin: auto;
-        max-width: 400px;
+        max-width: 100%;
         height: 259px;
         background-image: linear-gradient(to right, #f09230, #774a90);
         margin-top: 100px;
     }
     .ap img {
-        width: 400px;
+        width: 300px;
+        height: 100%;
     }
     @-webkit-keyframes ap {
         from {
@@ -124,7 +135,7 @@ position: absolute;
             background-image: linear-gradient(to right, #f09230, #774a90);
         }
         to {
-            width: 400px;
+            width: 100%;
             background-image: linear-gradient(to right, #f09230, #774a90);
             background-color: #b500ff;
             background-position: center;
@@ -143,7 +154,7 @@ position: absolute;
             display: block;
         }
         to {
-            width: 400px;
+            width: 100%;
             background-image: linear-gradient(to right, #f09230, #774a90);
             background-color: #b500ff;
             background-position: center;
@@ -152,7 +163,7 @@ position: absolute;
         }
     }
     div#grad {
-        width: 400px;
+        width: 100%;
         -webkit-animation-name: example;
         -webkit-animation-duration: 1s;
         animation-name: example;
@@ -190,7 +201,7 @@ position: absolute;
         margin-top: 250px;
         padding: 70px 0px;
         margin: auto;
-        width: 1100px;
+        width: 95%;
     }
     .corpoblocos {
         margin: auto;
@@ -205,18 +216,18 @@ position: absolute;
     .vetorconteudo {
         position: relative;
         float: left;
-        width: 49%
+        width: 100%
     }
     .vetorconteudo {
         position: relative;
         float: left;
-        width: 44%;
+        width: 100%;
         text-align: center;
     }
     .texto {
         position: relative;
         float: left;
-        width: 49%;
+        width: 100%;
     }
     .faixacima {
         width: 100%;
@@ -252,7 +263,7 @@ position: absolute;
     }
     #message {
         float: left;
-        width: 500px;
+        width: 100%;
         height: 100px;
         background: #d84848;
     }
@@ -268,7 +279,7 @@ div.vetorconteudo > img{
         margin-top: 50px;
         padding: 70px 0px;
         margin: auto;
-        width: 1100px;
+        width: 95%;
    
 
 
@@ -303,9 +314,9 @@ div.vetorconteudo > img{
 .blocopart{
  float: left;
     position: relative;
-    width: 26.5%;
+    width: 100%%;
     display: block;
-    padding: 2%;
+    
     text-align: justify;
 }
 
@@ -355,21 +366,24 @@ div.vetorconteudo > img{
 .blocosartig{
     float: left;
     position: relative;
-    width: 45%;
+    width: 100%;
     text-align: center;
-    padding:0px  2% ;
+    border: 1px solid #453d8b;
+    margin: 20px 0px;
 }
 
 
 .blocosartig img{
     width: 100%;
-    height: 320px;
+    
 }
 
 
 
 
-
+#seta{
+    margin-top: -50px
+}
 
 
 
@@ -381,13 +395,13 @@ div.vetorconteudo > img{
 .partdalogo{
     float: left;
     position: relative;
-    width: 49%;
+    width: 100%;
     text-align: center;
 
 }
 
 .partdalogo img{
-    width: 300px;
+    width: 100%;
 }
 
 
@@ -399,20 +413,19 @@ div.vetorconteudo > img{
 
 
 .redes{
-    max-width: 369px;
+    max-width: 100%;
     float: left;
     position: relative;
     text-align: center;
 }
 .rede{
-    width: 100px;
-    height: 100px;
+width: 76px;
+    height: 109px;
     float: left;
-    margin: 10px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    transition: .2s
+    transition: .2s;
 }
 
 #in:hover, #tw:hover, #fb:hover{
