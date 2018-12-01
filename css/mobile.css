@@ -42,7 +42,7 @@ font-size: 30px;
     height: 100%;
     width: 0%;
     position: fixed;
-    z-index: 1;
+    z-index: 9999;
     top: 0;
     right: 0;
     background-color: rgb(178, 135, 168);
