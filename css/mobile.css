@@ -7,7 +7,7 @@
         width: 100%;
         font-family: PoiretOne-Regular;
         position: relative;
-        width: 90%;
+        width: 100%;
     }
 
 
@@ -292,7 +292,7 @@ div.vetorconteudo > img{
 
 .org{
     float: left;
-    width: 100%;
+    width: 102%;
     position: relative;
     display: block;
     padding: 200px 0px;
@@ -311,13 +311,13 @@ div.vetorconteudo > img{
     display: block;
 
 }
-.blocopart{
- float: left;
+.blocopart {
+    float: left;
     position: relative;
-    width: 100%%;
+    width: 90%;
     display: block;
-    
     text-align: justify;
+    padding: 0px 3%;
 }
 
 .imgbloco{
@@ -500,6 +500,7 @@ width: 76px;
     width: 290px;
    position: relative;
    float: left;
+   padding-left: 3%;
 
 }
 

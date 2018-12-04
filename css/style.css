@@ -4,13 +4,12 @@
     --gallery-btn: #fff;
 }
 
-
 .gallery {
     width: 100%;
-    
     margin: auto;
     text-align: center;
     position: relative;
+    margin-top: 200px;
 }
 
 .gallery .buttons {
@@ -84,7 +83,11 @@
     
 }
 
-
+#backimg{
+    background-position: center;
+    
+    background-repeat: no-repeat;
+}
 
 .block-1 {
     background-image: url("../sliders/img1.png");
