@@ -1,140 +1,142 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <link rel="stylesheet" type="text/css" href="css/desktop.css">
-      <link rel="stylesheet" type="text/css" href="css/mobile.css">
-      <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-      <link href="cima.png" rel="shortcut icon" type="image/x-icon">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="css/style.css">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   </head>
-   <body>
-      <div id="myNav" class="overlay">
-         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-         <div class="overlay-content">
-            <a href="#">HOME</a>
-            <a href="#">PRODUTOS</a>
-            <a href="#">IDENTIDADE</a>
-            <a href="#">ARTIGOS</a>
-            <a href="https://wa.me/5511983788954?text=Olá,%20meu%20amigo(a)!" target="_blank" >WHATSAPP </a>
-         </div>
+
+<head>
+   <link rel="stylesheet" type="text/css" href="css/desktop.css">
+   <link rel="stylesheet" type="text/css" href="css/mobile.css">
+   <link rel="stylesheet" type="text/css" href="css/social.css">
+   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+   <link href="img/logoicone.ico" rel="shortcut icon" type="image/x-icon">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+
+
+   <!-- JQUERY 3.3.1 -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   <!-- Load font awesome icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+   <!-- The social media icon bar -->
+   <div class="icon-bar">
+      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="google"><i class="fa fa-google"></i></a>
+      <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+   </div>
+
+   <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+         <a href="#home">HOME</a>
+         <a href="#produtos">PRODUTOS</a>
+         <a href="#identidade">IDENTIDADE</a>
+         <a href="#artigos">ARTIGOS</a>
+         <a href="#coaches">COACHES</a>
+         <a href="#contato">CONTATO</a>
+         <a href="https://wa.me/5511983788954?text=Olá,%20meu%20amigo(a)!" target="_blank">WHATSAPP </a>
       </div>
-      <span id="spnamenu" onclick="openNav()">☰</span>
-      <script>
-         function openNav() {
-             document.getElementById("myNav").style.width = "300px";
-             document.getElementById("myNav").style.height = "100%";
-         }
-         
-         function closeNav() {
-             document.getElementById("myNav").style.width = "0%";
-             document.getElementById("myNav").style.height = "100%";
-         }
-      </script>
-      <div class="ap">
-         <img src="animacao/animaae.png">
-      </div>
-      <script type="text/javascript">
-         function typeWritter(texto,idElemento,tempo){
-             var char = texto.split('').reverse();
-             var typer = setInterval(function () {
-                 if (!char.length) return clearInterval(typer);
-                 var next = char.pop();
-                 document.getElementById(idElemento).innerHTML += next;
-             }, tempo);
-         }
-         typeWritter('Professional by carrer','log',50);
-      </script>
-      <div id="log" style="
+   </div>
+
+   <span id="spnamenu" onclick="openNav()">☰</span>
+   <script>
+      function openNav() {
+         document.getElementById("myNav").style.width = "300px";
+         document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+         document.getElementById("myNav").style.width = "0%";
+         document.getElementById("myNav").style.height = "100%";
+      }
+   </script>
+
+   <div class="ap" id="home">
+      <img src="animacao/animaae.png">
+   </div>
+   <script type="text/javascript">
+      function typeWritter(texto, idElemento, tempo) {
+         var char = texto.split('').reverse();
+         var typer = setInterval(function () {
+            if (!char.length) return clearInterval(typer);
+            var next = char.pop();
+            document.getElementById(idElemento).innerHTML += next;
+         }, tempo);
+      }
+      typeWritter('Professional by carrer', 'log', 50);
+   </script>
+   <div id="log" style="
          text-align: center;
          padding-top: 20px;
          color: #403e3e;
          height: 220px;
-         "></div>
+         ">
+   </div>
 
-<div class="gallery">
-               <div class="photos">
-                  <!-- cada um é um slider -->
-                  <div id="backimg" class="block block-1 active">
-                     <span> 2C</span>    
-                  </div>
-                  <!-- cada um é um slider -->
-                  <div id="backimg" class="block block-2">
-                     <span> 2C</span>    
-                  </div>
-                  <!-- cada um é um slider -->
-                  <div id="backimg" class="block block-3">
-                     <span> 2C</span>    
-                  </div>
-                 
-               </div>
-               <!-- botoes -->
-               <div class="buttons">
-                  <a class="prev" href="#"><span>&lt;</span></a>
-                  <a class="next" href="#"><span>&gt;</span></a>
-               </div>
-            </div>
+   <div class="seta">
+      <img src="img/seta.svg">
+   </div>
+
+   <div class="gallery">
+      <div class="photos">
+         <!-- cada um é um slider -->
+         <div id="backimg" class="block block-1 active">
+            <span> 2C</span>
+         </div>
+         <!-- cada um é um slider -->
+         <div id="backimg" class="block block-2">
+            <span> 2C</span>
+         </div>
+         <!-- cada um é um slider -->
+         <div id="backimg" class="block block-3">
+            <span> 2C</span>
+         </div>
+
+      </div>
+      <!-- botoes -->
+      <div class="buttons">
+         <a class="prev" href="#"><span>&lt;</span></a>
+         <a class="next" href="#"><span>&gt;</span></a>
+      </div>
+   </div>
 
 
 
-      <!-- blocos -->
-      <div class="corpoblocos">
-         <div class="auxblocos">
-            
-            <script src="js/main.js"></script>
-            <div class="bloco">
-               <div class="auxbloco">
-                  <div class="fundobloco1">
-                     <div class="texto">
-                        <h2>Life Coaching</h2>
-                        <p>Desenvolvimento e potencialização de seus soft skills para se destacar no ambiente corporativo e manutenção do equilíbrio interior.<br>
-                        </p>
-                     </div>
-                     <div class="vetorconteudo">
-                        <img src="img/equili.svg">
-                     </div>
-                     <div class="saiba">
-                        <a href="link_para_conteudo" style="
-                           ">SAIBA +</a>
-                        <br>
-                     </div>
+   <!-- blocos -->
+   <div class="corpoblocos">
+      <div class="auxblocos">
+
+         <script src="js/main.js"></script>
+
+         <div class="bloco">
+            <div class="auxbloco">
+               <div class="fundobloco1">
+                  <div class="texto" id="produtos">
+                     <h2>Coaching for Doctors</h2>
+                     <h4>CICLO DE DESENVOLVIMENTO</h4>
+                     <p>Planejamento de carreira para médicos recém-formados, estratégias para adaptação na rotina de
+                        trabalho (teste de resiliência), metodologia <br>
+                        de autoconhecimento para lidar com inteligência emocional na tomada de decisão, competências
+                        para liderar equipe.<br><br>
+                     </p>
+                     <h4>ENGAJAMENTO PROFISSIONAL</h4>
+                     <p>Definir metas para alavancar seu consultório, Marketing pessoal/profissional
+                        trabalhando sua imagm em redes sociais, elaboração de currículo, LinkedIn, Instagram,
+                        Facebook, sites e blog.
+                     </p>
                   </div>
-               </div>
-            </div>
-            <div class="bloco">
-               <div class="auxbloco">
-                  <div class="fundobloco1">
-                     <div class="texto">
-                        <h2>Coaching Empresarial</h2>
-                        <p>gSoluções para sua empresa de acordo com as principais demanadas para o alcance de alta performance e potencializar os resultados de sua cultura, mantendo a gestão organizacional em equilíbrio com todas as áreas do negócio, comunicação eficaz entre os clientes internos e externos e alavanca do sucesso para o empresário e empresa.
-                        </p>
-                     </div>
-                     <div class="vetorconteudo">
-                        <img src="img/teste.svg">
-                     </div>
-                     <div class="saiba">
-                        <a href="link_para_conteudo" style="
-                           ">SAIBA +</a>
-                        <br>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="bloco">
-               <div class="auxbloco">
-                  <div class="fundobloco1">
-                     <div class="texto">
-                        <h2>Coaching for Doctors</h2>
-                        <p>Planejamento de carreira para médicos recém-formados, estratégias para adaptação na rotina de trabalho (teste de resiliência), metodologia   <br>
-                           de autoconhecimento para lidar com inteligência emocional na tomada de decisão, competências para liderar equipe.<br><br>
-                        </p>
-                     </div>
-                     <div class="vetorconteudo">
-                        <img src="img/med.svg" style="
+                  <div class="vetorconteudo">
+                     <img src="img/med.svg" style="
                            ">
-                     </div>
-                     <div class="saiba">
+                  </div>
+                  <!-- <div class="saiba">
                        <a href="link_para_conteudo" style="
                            padding: 11px 84px;
                            border-radius: 40px;
@@ -151,167 +153,260 @@
                            float: left;
                            ">SAIBA +</a>
                         <br>
-                     </div>
-                  </div>
+                     </div> -->
                </div>
             </div>
          </div>
-      </div>
 
-
-<div class="corfundo">
- <div class="org">
-                  <h3>IDENTIDADE ORGANIZACIONAL</h3>
-                  <div class="paipart">
-                     <div class="blocopart">
-                        <div class="imgbloco" id="mi"></div>
-                        <h3>Missão</h3>
-                        <p>Promover o desenvolvimento progressivo e de alta performance de  profissionais  de forma sistêmica, com
-                           foco nas principais tendências de  mercado 
-                           a partir das profissões  para aplicabilidade prática, visão ampla de  negócio  e investimento constante no
-                           intelectual de forma adequada de acordo com as  exigências de mercado . 
-                        </p>
-                     </div>
-                     <div class="blocopart">
-                        <div class="imgbloco" id="vi"></div>
-                        <h3>Visão</h3>
-                        <p>Manter o comprometimento com a determinação no alcance das metas,
-                           respeito pelas diferenças, atitude positiva em processos de mudanças de ordem
-                           pessoal e profissional, competência funcional na busca de informações
-                           contundentes e relevantes, comunicação eficaz e equilibrada nas relações
-                           interpessoais com total ética e transparência frente aos negócios/clientes.
-                        </p>
-                     </div>
-                     <div class="blocopart">
-                        <div class="imgbloco" id="va"></div>
-                        <h3>Valores</h3>
-                        <p>Construir um ciclo progressivo
-                           de conquistas positivas e de alto impacto corporativo, agregar conhecimentos
-                           multidisciplinares para segmentos diversos, com base na geração de novos
-                           negócios e parcerias construtivas.
-                        </p>
-                     </div>
+         <div class="bloco">
+            <div class="auxbloco">
+               <div class="fundobloco1">
+                  <div class="texto">
+                     <h2>Coaching Empresarial</h2>
+                     <p>Soluções para sua empresa de acordo com as principais demanadas para o alcance de alta
+                        performance e potencializar os resultados de sua cultura, mantendo a gestão organizacional em
+                        equilíbrio com todas as áreas do negócio, comunicação eficaz entre os clientes internos e
+                        externos e alavanca do sucesso para o empresário e empresa.
+                     </p>
                   </div>
+                  <div class="vetorconteudo">
+                     <img src="img/teste.svg">
+                  </div>
+                  <!-- <div class="saiba">
+                        <a href="link_para_conteudo" style="
+                           ">SAIBA +</a>
+                        <br>
+                     </div> -->
                </div>
             </div>
+         </div>
 
-
-
-      <div class="rodacor">
-         <div class="rodape">
-            <div class="rodaaux">
-              
-               <div class="artigos">
-                  <h3>Artigos Interessantes</h3>
-                  <div class="artpai">
-                     <div class="blocosartig">
-                        <img src="img/carol-sweck.svg">
-                        <h4>Carol Dweck defende em livro a importância de valorizar o esforço </h4>
-                        <p>Pioneira no estudo sobre o desenvolvimento pessoal fala sobre como colocar a mentalidade a nosso favor</p>
-                        <a id="seta" href="https://exame.abril.com.br/revista-exame/carol-duek-defende-em-livro-a-importancia-de-valorizar-o-esforco/" target="_blank" style="
-                           font-size: 64px;
-                           text-decoration: none;
-                           ">⇨</a>
-                     </div>
-                     <div class="blocosartig">
-                        <img src="img/daniel.svg">
-                        <h4>Inteligência Emocional de Daniel Golemann </h4>
-                        <p>As duas mentes, mente racional e a mente emocional, geralmente operam em estreita harmonia e equilíbrio</p>
-                        <a id="seta" href="https://www.academiadoaprendiz.com.br/nossas-duas-mentes/" target="_blank" style="
-                           font-size: 64px;
-                           text-decoration: none;
-                           ">⇨</a>
-                     </div>
+         <div class="bloco">
+            <div class="auxbloco">
+               <div class="fundobloco1">
+                  <div class="texto">
+                     <h2>Life Coaching</h2>
+                     <p>Desenvolvimento e potencialização de seus soft skills para se destacar no ambiente corporativo
+                        e manutenção do equilíbrio interior.</p>
+                     <p>Teste NEO PI - Avaliação de cinco domínios de estruturas de personalidade</p>
+                     <p>Crenças limitadoras - Desconstrução da negatividade</p>
                   </div>
+                  <div class="vetorconteudo">
+                     <img src="img/equili.svg">
+                  </div>
+                  <!-- <div class="saiba">
+                        <a href="link_para_conteudo" style="
+                           ">SAIBA +</a>
+                        <br>
+                     </div> -->
                </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
 
 
-
-
-
-
-
-              <div class="priperfil">
-                
-                <div class="perfil">
-                  <div class="caixafoto">
-                    <div class="linha"></div>
-                    <div class="foto" id="foto1"></div>
-                    <div class="linha"></div>
-                  </div>
-                  <h3>ADRIANA</h3>
-                  <p>Profissão <br> descrição</p>
-                </div>
-
-
-                 <div class="perfil">
-                  <div class="caixafoto">
-                    <div class="linha"></div>
-                    <div class="foto" id="foto2"></div>
-                    <div class="linha"></div>
-                  </div>
-                  <h3>ADRIANA</h3>
-                  <p>Profissão <br> descrição</p>
-                </div>
-
-              </div>
-
-
-
-
-
-
-
-
-
-
-
-
-               
-               
-               
+   <div class="corfundo">
+      <div class="org" id="identidade">
+         <h3>IDENTIDADE ORGANIZACIONAL</h3>
+         <div class="paipart">
+            <div class="blocopart">
+               <div class="imgbloco" id="mi"></div>
+               <h3>Missão</h3>
+               <p>Promover o desenvolvimento progressivo e de alta performance de profissionais de forma sistêmica, com
+                  foco nas principais tendências de mercado
+                  a partir das profissões para aplicabilidade prática, visão ampla de negócio e investimento constante
+                  no
+                  intelectual de forma adequada de acordo com as exigências de mercado .
+               </p>
+            </div>
+            <div class="blocopart">
+               <div class="imgbloco" id="vi"></div>
+               <h3>Visão</h3>
+               <p>Manter o comprometimento com a determinação no alcance das metas,
+                  respeito pelas diferenças, atitude positiva em processos de mudanças de ordem
+                  pessoal e profissional, competência funcional na busca de informações
+                  contundentes e relevantes, comunicação eficaz e equilibrada nas relações
+                  interpessoais com total ética e transparência frente aos negócios/clientes.
+               </p>
+            </div>
+            <div class="blocopart">
+               <div class="imgbloco" id="va"></div>
+               <h3>Valores</h3>
+               <p>Construir um ciclo progressivo
+                  de conquistas positivas e de alto impacto corporativo, agregar conhecimentos
+                  multidisciplinares para segmentos diversos, com base na geração de novos
+                  negócios e parcerias construtivas.
+               </p>
             </div>
          </div>
       </div>
+   </div>
 
 
 
+   <div class="rodacor">
+      <div class="rodape">
+         <div class="rodaaux">
 
+            <div class="artigos" id="artigos">
+               <h3>Artigos Interessantes</h3>
+               <div class="artpai">
+                  <div class="blocosartig">
+                     <img src="img/carol-sweck.svg">
+                     <h4>Carol Dweck defende em livro a importância de valorizar o esforço </h4>
+                     <p>Pioneira no estudo sobre o desenvolvimento pessoal fala sobre como colocar a mentalidade a
+                        nosso favor</p>
+                     <a id="seta" href="https://exame.abril.com.br/revista-exame/carol-duek-defende-em-livro-a-importancia-de-valorizar-o-esforco/"
+                        target="_blank" style="
+                           font-size: 64px;
+                           text-decoration: none;
+                           ">⇨</a>
+                  </div>
+                  <div class="blocosartig">
+                     <img src="img/daniel.svg">
+                     <h4>Inteligência Emocional de Daniel Golemann </h4>
+                     <p>As duas mentes, mente racional e a mente emocional, geralmente operam em estreita harmonia e
+                        equilíbrio</p>
+                     <a id="seta" href="https://www.academiadoaprendiz.com.br/nossas-duas-mentes/" target="_blank"
+                        style="
+                           font-size: 64px;
+                           text-decoration: none;
+                           ">⇨</a>
+                  </div>
+               </div>
+            </div>
 
+            <div class="priperfil" id="coaches">
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1829.674086349028!2d-46.69610226389311!3d-23.48396553078634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef9b0a811ec3f%3A0x372ddf891d5c9a65!2sAv.+Min.+Petr%C3%B4nio+Portela%2C+1901+-+Freguesia+do+%C3%93%2C+S%C3%A3o+Paulo+-+SP%2C+02802-120%2C+Brasil!5e0!3m2!1spt-BR!2sus!4v1543644133294" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+               <div class="perfil" style="margin-right: 21px;">
+                  <div class="caixafoto">
+                     <div class="linha"></div>
+                     <div class="foto" id="foto1"></div>
+                     <div class="linha"></div>
+                  </div>
+                  <h3>ADRIANA DUARTE</h3>
+                  <p>
+                     Formada há 09 anos como Psicóloga, com Pós-Graduação em Docência do Ensino Superior e
+                     Psicopedagogia Institucional e Educacional, fundadora da empresa 2C Professional by Carrer com
+                     ampla visão de mercado e empreendedora, já potencializou vários profissionais a partir de ações
+                     diretas e de impacto tanto na vida pessoal quanto profissional, ao proporcionar experiências de
+                     grandes mudanças e resultados positivos em um espaço curto de tempo. Já ministrou palestra sobre
+                     tema oriundo a Psicologia na Casa de Médicos no ABC Paulista, com participação do público para
+                     discussão, ao se destacar no relacionamento interpessoal e na facilidade didática ao praticar a
+                     comunicação.
+                  </p>
+               </div>
 
+               <div class="perfil">
+                  <div class="caixafoto">
+                     <div class="linha"></div>
+                     <div class="foto" id="foto2"></div>
+                     <div class="linha"></div>
+                  </div>
+                  <h3>KARIANE DE OLIVEIRA</h3>
+                  <p>
+                     Membro da Sociedade Brasileira de Coaching, formada em Personal e Professional Coaching, nos quais
+                     possui reconhecidas realizações ao ministrar e certificar outros coaches. Suas formações de base
+                     são Recursos Humanos e Graduação em Psicologia.
+                     Docente em duas Instituições para formadores na área da saúde (Enfermagem e Segurança do Trabalho)
+                     e fundadora da Empresa 2C Professional by Career, como ampla experiência no mundo corporativo,
+                     tendo atuado com clientes de grandes instituições, utilizando como base sólida o desenvolvimento
+                     de mindset das pessoas em encontros presenciais e online em território Nacional e Internacional.
+                  </p>
+               </div>
 
+            </div>
+         </div>
+      </div>
+   </div>
 
-      <div class="rodacor">
-         <div class="rodape">
-            <div class="rodaaux">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1829.674086349028!2d-46.69610226389311!3d-23.48396553078634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef9b0a811ec3f%3A0x372ddf891d5c9a65!2sAv.+Min.+Petr%C3%B4nio+Portela%2C+1901+-+Freguesia+do+%C3%93%2C+S%C3%A3o+Paulo+-+SP%2C+02802-120%2C+Brasil!5e0!3m2!1spt-BR!2sus!4v1543644133294"
+      width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-                  <div class="partdalogo">
-                  <a href="">
+   <div class="rodacor" id="contato">
+      <div class="rodape">
+         <div class="rodaaux">
+             <div class="textoobre">
+               <h3>Sobre</h3>
+               <p>
+                  A ideia da formalização da empresa partiu de um desejo muito forte de empreender, utilizando a grande
+                  bagagem de criatividade, iniciativa e inovação de ambas idealizadoras do negócio (Adriana Duarte e
+                  Kariane de Oliveira) e de estender os trabalhos desenvolvidos para grandes massas a partir da
+                  valorização de uma proposta de desenvolvimento totalmente alinhada com o infinito (por isso da
+                  existência do símbolo infinito no logo da empresa), que justifica a intenção da aquisição do
+                  conhecimento para o ser humano ser de maneira infinita, contínua e sempre de forma crescente em
+                  qualquer instância da vida, ou seja, qualidade de vida, relacionamento, pessoal e profissional.
+               </p>
+               <p>
+                  O nome se deu devido sermos duas profissionais do segmento de Coaching (2C) com o pensamento e
+                  desenvolvimento voltado para carreira.
+               </p>
+            </div>
+            <div class="partdalogo">
+               <a href="">
                   <img src="img/logo.svg">
-                  </a>
-               </div>
-               <div class="textoobre">
-                  <h3>Sobre</h3>
-                  <p>a empresa ~~~~~~ ~~~ ~~~~~~ ~~~~~~ ~~~~~~ ~~ ~~~~~~~~ ~~~~~~~~~~~~ ~~~~~~</p>
-               </div>
-               <div class="redes">
-                  <a href="">
-                     <div class="rede" id="in"></div>
-                  </a>
-                  <a href="">
-                     <div class="rede" id="fb"></div>
-                  </a>
-                  <a href="">
-                     <div class="rede" id="tw"></div>
-                  </a>
-               </div>
-               <div class="c">
-                  <p>Copyright  © Brand 2018</p>
-               </div>
-                 </div>
+               </a>
+            </div>
+            <div class="redes">
+               <a href="">
+                  <div class="rede" id="in"></div>
+               </a>
+               <a href="">
+                  <div class="rede" id="fb"></div>
+               </a>
+               <a href="">
+                  <div class="rede" id="tw"></div>
+               </a>
+            </div>
+           
+            
+            <div class="c">
+               <p>Copyright © Brand 2018</p>
+            </div>
          </div>
       </div>
-   </body>
+   </div>
+
+   <script>
+      // Select all links with hashes
+      $('a[href*="#"]')
+         // Remove links that don't actually link to anything
+         .not('[href="#"]')
+         .not('[href="#0"]')
+         .click(function (event) {
+            // On-page links
+            if (
+               location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+               &&
+               location.hostname == this.hostname
+            ) {
+               // Figure out element to scroll to
+               var target = $(this.hash);
+               target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+               // Does a scroll target exist?
+               if (target.length) {
+                  // Only prevent default if animation is actually gonna happen
+                  event.preventDefault();
+                  $('html, body').animate({
+                     scrollTop: target.offset().top
+                  }, 1000, function () {
+                     // Callback after animation
+                     // Must change focus!
+                     // var $target = $(target);
+                     // $target.focus();
+                     // if ($target.is(":focus")) { // Checking if the target was focused
+                     //    return false;
+                     // } else {
+                     //    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                     //    $target.focus(); // Set focus again
+                     // };
+                  });
+               }
+            }
+         });
+   </script>
+</body>
+
 </html>

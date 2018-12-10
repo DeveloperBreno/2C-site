@@ -23,7 +23,7 @@
 #spnamenu{
 font-size: 30px;
     cursor: pointer;
-    color: #ad90aab0;
+    color: #88627f;
     float: right;
     margin: 0px 10px 0px 0px;
     position: fixed;
@@ -45,15 +45,21 @@ font-size: 30px;
     z-index: 9999;
     top: 0;
     right: 0;
-    background-color: rgb(178, 135, 168);
+    background-color: #88627f;
 
     overflow-y: hidden;
     transition: 0.5s;
 }
+.seta{
+        width: 100px;
+    margin: auto;
+    position: relative;
+    margin-top: -80px;
+}
 
 .overlay-content {
     position: relative;
-    top: 25%;
+    top: 9%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -408,7 +414,7 @@ div.vetorconteudo > img{
 .textoobre{
     float: left;
     position: relative;
-    width: 49%;
+    width: 99%;
 }
 
 
@@ -540,7 +546,9 @@ width: 76px;
 
 
 
-
+.textoobre p{
+    font-size: 24px;
+}
 
 
 
