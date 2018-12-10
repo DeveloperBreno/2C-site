@@ -35,7 +35,7 @@ only screen and (max-width: 99999px) and (min-width: 601px) {
     top: 0;
     right: 0;
     background-color: #88627f;
-
+    z-index: 9999;
     overflow-y: hidden;
     transition: 0.5s;
 }
@@ -289,7 +289,7 @@ div.vetorconteudo > img{
     float: left;
     position: relative;
     width: 100%;
-
+    z-index: 9998;
       background: #5eaed2;
 
   }
@@ -432,7 +432,7 @@ margin: auto;
     transition: .2s
 }
 
-#in:hover, #tw:hover, #fb:hover{
+#in:hover, #tw:hover, #fb:hover, #yo:hover{
     background-size: 90%;
     transition: .2s
 }
@@ -442,8 +442,8 @@ margin: auto;
     transition: .2s
 }
 
-#tw{
-    background-image: url(../img/tw.svg);
+#yo{
+    background-image: url(../img/yo.svg);
     transition: .2s
 }
 #fb{
@@ -481,9 +481,12 @@ margin: auto;
 
 }
 
-.perfil{
+.perfil {
     float: left;
-    width: 49%;
+    width: 48%;
+    border: 1px solid #9C27B0;
+    padding: 7px 3px;
+    border-radius: 20px;
 }
 
 .perfil h3{

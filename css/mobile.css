@@ -46,7 +46,7 @@ font-size: 30px;
     top: 0;
     right: 0;
     background-color: #88627f;
-
+    z-index: 9999;
     overflow-y: hidden;
     transition: 0.5s;
 }
@@ -434,7 +434,7 @@ width: 76px;
     transition: .2s;
 }
 
-#in:hover, #tw:hover, #fb:hover{
+#in:hover, #yo:hover, #fb:hover{
     background-size: 90%;
     transition: .2s
 }
@@ -444,8 +444,8 @@ width: 76px;
     transition: .2s
 }
 
-#tw{
-    background-image: url(../img/tw.svg);
+#yo{
+    background-image: url(../img/yo.svg);
     transition: .2s
 }
 #fb{

@@ -40,10 +40,12 @@
 
 .gallery a.prev {
     left: 1%;
+    z-index: 9999;
 }
 
 .gallery a.next {
     right: 1%;
+    z-index: 9998;
 }
 
 .gallery a:hover {
@@ -53,6 +55,7 @@
 .gallery .photos {
     position: relative;
     height: 600px;
+    z-index: 9998;
 }
 
 .gallery .block {
@@ -76,8 +79,8 @@
 
 .photos div span{
     font-size: 34px;
-    text-shadow: #dfdfdf 0px 0px 4px;
-    color: #666;
+    text-shadow: #000 0px 0px 4px;
+    color: #9C27B0;
     position: relative;
     top: 512px;
     
