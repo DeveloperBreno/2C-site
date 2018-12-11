@@ -115,17 +115,17 @@ position: absolute;
         line-height: 1.3125;
     }
     .ap {
-        text-align: center;
-        -webkit-animation-name: ap;
-        -webkit-animation-duration: 1.5s;
-        animation-name: ap;
-        animation-duration: 1.5s;
-        transition: 1.5s;
-        margin: auto;
-        max-width: 100%;
-        height: 259px;
-        background-image: linear-gradient(to right, #f09230, #774a90);
-        margin-top: 100px;
+            text-align: center;
+    -webkit-animation-name: ap;
+    -webkit-animation-duration: 1.5s;
+    animation-name: ap;
+    animation-duration: 1.5s;
+    transition: 1.5s;
+    margin: auto;
+    max-width: 300px;
+    height: 138px;
+    background-image: linear-gradient(to right, #f09230, #774a90);
+    margin-top: 100px;
     }
     .ap img {
         width: 300px;
@@ -199,9 +199,11 @@ position: absolute;
     }
     .texto h2 {
         font-size: 50px;
+        text-transform: uppercase;
     }
     .texto p {
         font-size: 30px;
+        text-align: justify;
     }
     .auxblocos {
         margin-top: 250px;
@@ -306,7 +308,15 @@ div.vetorconteudo > img{
 
 .org h3{
     text-align: center;
+    text-transform: uppercase;
 
+}
+
+.blocosartig h4{
+    font-size: 24px;
+}
+.blocosartig p{
+    font-size: 20px;
 }
 
 
@@ -361,6 +371,7 @@ div.vetorconteudo > img{
 
 .artigos h3{
     text-align: center;
+    text-transform: uppercase;
 }
 
 .artpai{
@@ -490,6 +501,7 @@ width: 76px;
 .perfil h3{
     text-align: center;
     font-size: 25px;
+    text-transform: uppercase;
     
 }
 

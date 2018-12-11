@@ -113,7 +113,7 @@ position: absolute;
         transition: 1.5s;
         margin: auto;
         max-width: 400px;
-        height: 259px;
+        height: 153px;
         background-image: linear-gradient(to right, #f09230, #774a90);
         margin-top: 100px;
     }
@@ -188,9 +188,11 @@ position: absolute;
     }
     .texto h2 {
         font-size: 50px;
+        text-transform: uppercase;
     }
     .texto p {
         font-size: 30px;
+        text-align: justify;
     }
     .auxblocos {
         margin-top: 250px;
@@ -306,9 +308,16 @@ margin: auto;
 
 .org h3{
     text-align: center;
+    text-transform: uppercase;
 
 }
 
+.blocosartig h4{
+    font-size: 24px;
+}
+.blocosartig p{
+    font-size: 20px;
+}
 
 .paipart{
     float: left;
@@ -361,6 +370,7 @@ margin: auto;
 
 .artigos h3{
     text-align: center;
+    text-transform: uppercase;
 }
 
 .artpai{
@@ -492,6 +502,7 @@ margin: auto;
 .perfil h3{
     text-align: center;
     font-size: 25px;
+    text-transform: uppercase;
     
 }
 
