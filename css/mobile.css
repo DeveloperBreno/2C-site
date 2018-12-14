@@ -5,7 +5,7 @@
         margin: auto;
         padding: 0px;
         width: 100%;
-        font-family: PoiretOne-Regular;
+        font-family: gabriola;
         position: relative;
         width: 100%;
     }
@@ -104,8 +104,8 @@ position: absolute;
 
 
     @font-face {
-        font-family: PoiretOne-Regular;
-        src: url(../font/PoiretOne-Regular.ttf);
+        font-family: gabriola;
+        src: url(../font/gabriola.ttf);
     }
     ::placeholder {
         color: #cdcdcd;

@@ -38,10 +38,16 @@
   .google {
     background: #dd4b39;
     color: white;
-  }
-  
-  .linkedin {
+  }  
+
+.linkedin {
     background: #007bb5;
+    color: white;
+  }
+
+  
+  .instagram{
+    background: #da8541;
     color: white;
   }
   
