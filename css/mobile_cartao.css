@@ -1,0 +1,75 @@
+@media handheld, only screen and (max-width: 600px){
+
+
+.cartprinc{
+        margin: auto;
+        position: relative;
+        width: 100%;
+        background-color: #fff;
+
+
+    }
+    .cartaux{
+        position: relative;
+        margin: auto;
+        width: 100%;
+        height: 700px;
+        padding-top: 100px;
+
+        
+
+
+    }
+
+    .carsolo{
+        float: left;
+        width: 90%;
+        padding: 5%;
+        position: relative;
+        transition: 1s;
+        height: 300px;
+        margin: 20px 0px;
+
+
+    }
+    #e:hover, #d:hover{
+        transition: .3s;
+        background-size: 500px;
+    }
+    .carsolo h3{
+        text-transform: uppercase;
+    font-size: 60px;
+    color: #765c8c;
+    text-shadow: #000 1px 1px 1px;
+    }
+
+    .carsolo p{
+        
+    font-size: 44px;
+    color: #66b3d0;
+    text-shadow: #000 1px 1px 1px;
+    }
+    #e{
+        float: left;
+        background-image: url(../img/people.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 400px;
+        /*background-attachment: fixed;*/
+        transition: .3s;
+    }
+
+    #d{
+        float: right;
+        background-image: url(../img/business.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 400px;
+        /*background-attachment: fixed;*/
+        transition: .3s;
+    }
+
+
+
+
+}
